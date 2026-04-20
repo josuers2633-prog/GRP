@@ -21,28 +21,24 @@ public class BusquedaServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        // ---- params base ----
+      
         String q = safeTrim(request.getParameter("q"));
         String categoria = safeTrim(request.getParameter("categoria"));
         String orden = safeTrim(request.getParameter("orden"));
         if (orden.isEmpty()) orden = "nombre";
 
-        // filtros extra
         String estado = safeTrim(request.getParameter("estado"));     // "" | "activo" | "inactivo"
         String vigencia = safeTrim(request.getParameter("vigencia")); // "" | "con" | "sin"
 
-        // paginación
         int page = 1;
         try { page = Integer.parseInt(request.getParameter("page")); } catch (Exception ignored) {}
         int pageSize = 5;
 
-        // ---- filtrar ----
         List<Producto> base = ProductoRepository.getAll();
         List<Producto> filtrados = new ArrayList<>();
 
         for (Producto p : base) {
 
-            // buscar por nombre o código
             boolean matchTexto = true;
             if (!q.isEmpty()) {
                 String texto = normalize(q);

@@ -2,19 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/web/index.jsp</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/web/detalle.jsp</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/web/busqueda.jsp</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/web/garantias.jsp</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/web/WEB-INF/head.jsp</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/web/manuales.jsp</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/src/java/servlets/BusquedaServlet.java</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/src/java/mx/unadm/grp/model/Componente.java</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/src/java/servlets/GarantiaServlet.java</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/src/java/mx/unadm/grp/repository/ComponenteRepository.java</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/src/java/mx/unadm/grp/model/Producto.java</file>
-            <file>file:/C:/Users/Joshk/Desktop/Netbeans%20Projects/GRP/src/java/mx/unadm/grp/repository/ProductoRepository.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

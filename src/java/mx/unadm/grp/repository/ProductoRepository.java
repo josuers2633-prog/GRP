@@ -25,8 +25,34 @@ public class ProductoRepository {
         }
         return null;
     }
+    
+    public static Producto buscarPorCodigo(String codigo) {
+    for (Producto p : productos) {
+        if (p.getCodigo().equalsIgnoreCase(codigo)) {
+            return p;
+        }
+    }
+    return null;
+}
+
+public static void actualizarProducto(Producto actualizado) {
+    for (int i = 0; i < productos.size(); i++) {
+        if (productos.get(i).getCodigo().equalsIgnoreCase(actualizado.getCodigo())) {
+            productos.set(i, actualizado);
+            return;
+        }
+    }
+}
+
+public static void eliminarProducto(String codigo) {
+    productos.removeIf(p -> p.getCodigo().equalsIgnoreCase(codigo));
+}
 
     public static List<Producto> getAll() {
         return productos;
     }
+    
+    public static void addProducto(Producto producto) {
+    productos.add(producto);
+}
 }
